@@ -1,0 +1,54 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Documentos Chile</ion-title>
+    <h1 class="leyenda">Portal de trámites para extranjeros</h1>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div lass="flex-center">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Tus Trámites en  línea</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <h3 class="subtitulo">Aquí podrás encontrar una lista de trámites que puedes realizar como extranjero a lo largo del territorio
+          chileno.</h3>
+
+          <ion-card class="cuadro1">
+            <ion-item>
+              <ion-icon name="person-outline" slot="start"></ion-icon>
+              <ion-label>Cédula de Identidad</ion-label>
+            </ion-item>
+            <ion-card-content>
+              <ion-button slot="end" size="small" class="mas" routerLink="/tramite1">Leer más</ion-button>
+            </ion-card-content>
+          </ion-card>
+          
+          <ion-card class="cuadro2">
+            <ion-item>
+              <ion-icon name="map-outline" slot="start"></ion-icon>
+              <ion-label>Permanencia Transitoria</ion-label>
+            </ion-item>
+            <ion-card-content>
+              <ion-button slot="end" size="small" class="mas">Leer más</ion-button>
+            </ion-card-content>
+          </ion-card>
+
+          <ion-card class="cuadro3">
+            <ion-item>
+              <ion-icon name="flag-outline" slot="start"></ion-icon>
+              <ion-label>Nacionalización</ion-label>
+            </ion-item>
+            <ion-card-content>
+              <ion-button slot="end" size="small" class="mas">Leer más</ion-button>
+            </ion-card-content>
+          </ion-card>
+      </ion-card-content>
+    </ion-card>  
+  </div>
+</ion-content>

@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Documentos Chile</ion-title>
+    <h1 class="leyenda">Portal de trámites para extranjeros</h1>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+<div class="ion-padding-vertical">
+  <ion-card class="ion-text-center">
+    <ion-card-title>
+      <ion-label>
+        <h1 class="text">Déjanos tu comentario</h1>
+      </ion-label>
+    </ion-card-title>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Usuario</ion-label>
+        <ion-input type="text" [(ngModel)]="tituloNoticia"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Detalle del Comentario</ion-label>
+        <ion-input type="text" [(ngModel)]="textoNoticia"></ion-input>
+      </ion-item>
+    </ion-card-content>
+    <ion-button shape="block" (click)="guardar()">Guardar Comentario</ion-button>
+  </ion-card>
+</div>
+</ion-content>

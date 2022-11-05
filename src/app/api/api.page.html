@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Documentos Chile</ion-title>
+    <h1 class="leyenda">Portal de trámites para extranjeros</h1>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card-header>
+    <ion-card-title>Horario y Dirección</ion-card-title>
+  </ion-card-header>
+
+    <ion-card class="cuadro1">
+      <ion-item>
+        <ion-icon name="location-outline" slot="start"></ion-icon>
+        <ion-label>Rosario Norte 532 <br> Oficina 1503, Las Condes. </ion-label>
+      </ion-item>      
+    </ion-card>
+
+    <ion-card class="cuadro1">
+      <ion-item>
+        <ion-icon name="time-outline" slot="start"></ion-icon>
+        <ion-label>Lunes a Viernes de  <br> 09:00 a 18:00 horas.</ion-label>
+      </ion-item>      
+    </ion-card>
+    
+  <div #map id="map"></div>
+</ion-content>

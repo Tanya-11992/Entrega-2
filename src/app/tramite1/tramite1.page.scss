@@ -1,0 +1,39 @@
+ion-content{
+    --padding-top:10px;
+    --padding-bottom:10px;
+    --padding-end:10px;
+    --padding-start:10px;
+  }
+
+  .leyenda {
+    font-size: 12px;
+    margin:3px 0 0 20px;
+  }
+
+  .documento{
+    background: #3880ff;
+    color: white;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+  }
+
+  ion-card-title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px 20px 0 20px;
+    color:black;
+  }
+
+  ion-card-content{
+    color:black;
+    text-align:justify;
+  }
+
+  .boton{
+    --background: rgba(0, 0, 255, 0.5);
+    width: 30px;
+    height: 30px;
+    margin: 10px 15px 20px 15px;
+    float: right;
+  }

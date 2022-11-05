@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Documentos Chile</ion-title>
+    <h1 class="leyenda">Portal de trámites para extranjeros</h1>
+    <ion-buttons slot="primary">
+      <ion-button (click)="logout()" color="danger" fill="outline">
+        Salir
+        <ion-icon slot="end" name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+  <ion-card-header>
+    <ion-card-title>Bienvenidos</ion-card-title>
+  </ion-card-header>
+  
+  <h3 class="texto">En este portal online encontraras todos
+    lo que necesitas como extranjero viviendo en Chile.
+  </h3>
+
+  <ion-card color="primary" class="cuadro1" routerLink="/tramites" >
+    <ion-icon name="document-text-sharp" class="icono"></ion-icon>
+    <ion-card-header>
+      <ion-card-title class="titulo" >Trámites</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+  
+  <ion-card color="secondary" class="cuadro1" routerLink="/home">
+    <ion-icon name="chatbubble-ellipses-sharp" class="icono"></ion-icon>
+    <ion-card-header>
+      <ion-card-title class="titulo">Comentarios</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+  
+  <ion-card color="tertiary" class="cuadro2" routerLink="/api">
+    <ion-icon name="navigate-sharp" class="icono"></ion-icon>
+    <ion-card-header>
+      <ion-card-title class="titulo">Oficina</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+</ion-card>
+</ion-content>
