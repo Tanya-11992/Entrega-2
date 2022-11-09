@@ -43,6 +43,11 @@ const routes: Routes = [
     path: 'tramite1',
     loadChildren: () => import('./tramite1/tramite1.module').then( m => m.Tramite1PageModule)
   },
+  // {
+  // path: '**',
+  // redirectTo: 'error',
+  // pathMatch: 'full'
+  // },
 ];
 
 @NgModule({

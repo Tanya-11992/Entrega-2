@@ -25,7 +25,8 @@ export class LoginPage implements OnInit {
   public alertController: AlertController,
   private router: Router,
   private storage: Storage,
-  public authenticationSerive:AutenthicationService) {}
+  public authenticationSerive:AutenthicationService,
+  public alerta:AlertController) {}
 
   ngOnInit() {
   }
@@ -141,5 +142,16 @@ export class LoginPage implements OnInit {
 
     await alert.present();
   }
+
+
+    //Alerta del boton dudas.
+    async presentAlert(){
+      let miAlerta = await this.alerta.create({
+        header: 'Dudas con tus trámites',
+        message: 'Llamanos al siguiente número 600 600 1234 y te ayudamos.',
+        buttons: ['ACEPTAR']
+      });
+      miAlerta.present()
+    }
 
 }
