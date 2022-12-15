@@ -43,11 +43,23 @@ const routes: Routes = [
     path: 'tramite1',
     loadChildren: () => import('./tramite1/tramite1.module').then( m => m.Tramite1PageModule)
   },
-  // {
-  // path: '**',
-  // redirectTo: 'error',
-  // pathMatch: 'full'
-  // },
+  {
+    path: 'tramite2',
+    loadChildren: () => import('./tramite2/tramite2.module').then( m => m.Tramite2PageModule)
+  },
+  {
+    path: 'tramite3',
+    loadChildren: () => import('./tramite3/tramite3.module').then( m => m.Tramite3PageModule)
+  },
+  {
+    path: 'contrasena',
+    loadChildren: () => import('./contrasena/contrasena.module').then( m => m.ContrasenaPageModule)
+  },
+   //{
+   //path: '**',
+   //redirectTo: 'error',
+   //pathMatch: 'full'
+   //},
 ];
 
 @NgModule({

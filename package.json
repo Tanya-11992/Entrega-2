@@ -1,7 +1,7 @@
 {
-  "name": "main",
-  "version": "0.0.1",
-  "author": "Ionic Framework",
+  "name": "documentos-chile",
+  "version": "1.0.3",
+  "author": "Tanya Suazo",
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
@@ -33,6 +33,7 @@
     "@ionic-native/status-bar": "^5.36.0",
     "@ionic/angular": "^6.1.9",
     "@ionic/storage": "^2.1.3",
+    "capacitor-data-storage-sqlite": "^4.0.1",
     "cordova-sqlite-storage": "^6.0.0",
     "ionicons": "^6.0.3",
     "promise-polyfill": "^8.2.3",
@@ -74,5 +75,5 @@
     "ts-node": "~8.3.0",
     "typescript": "~4.7.3"
   },
-  "description": "An Ionic project"
+  "description": "Aplicación móvil que reúne toda la información necesaria para que los extranjeros puedan llevar a cabo sus trámites en Chile, sin la necesidad de estar navegando en diferentes páginas o tener que ir a preguntar presencialmente sobre el trámite de alguna documentación."
 }

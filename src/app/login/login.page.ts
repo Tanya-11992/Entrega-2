@@ -35,9 +35,7 @@ export class LoginPage implements OnInit {
     // Se valida que el usuario ingreso todos los datos
     if(this.validateModel(this.login)){
       // Se obtiene si existe alguna data de sesión
-      this.authenticationSerive.login(this.login);
-    
-      
+      this.authenticationSerive.login(this.login);  
     }
     else{
       this.presentToast("Falta: "+this.field);
@@ -153,5 +151,7 @@ export class LoginPage implements OnInit {
       });
       miAlerta.present()
     }
+
+   
 
 }

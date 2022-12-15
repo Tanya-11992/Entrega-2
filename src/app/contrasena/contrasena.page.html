@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Documentos Chile</ion-title>
+    <h1 class="leyenda">Portal de trámites para extranjeros</h1>
+    <ion-buttons slot="primary">
+      <ion-button (click)="logout()" color="danger" fill="outline">
+        Salir
+        <ion-icon slot="end" name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-img src="../assets/img/logito.jpg"></ion-img>
+    <ion-card>
+        <ion-card-header>
+          <ion-card-title>Recupera tu contraseña</ion-card-title>
+        </ion-card-header>
+
+        <h3 class="texto">Ingresa los datos solicitados para enviarte
+          <br>
+          a tu correo la restauración de tu contraseña
+        </h3>
+
+          <ion-input class="usuario" placeholder="Nombre de Usuario" type="text"></ion-input>
+
+          <div class="btn_contrasena">
+            <ion-button class="btn"  routerLink="/login">Enviar</ion-button>
+          </div>
+    </ion-card>
+</ion-content>
+
