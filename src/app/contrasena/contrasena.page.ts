@@ -1,27 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router, NavigationExtras } from '@angular/router';
-import { SQLite, SQLiteObject } from '@awesome-cordova-plugins/sqlite/ngx';
-import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
 
 @Component({
   selector: 'app-contrasena',
   templateUrl: './contrasena.page.html',
   styleUrls: ['./contrasena.page.scss'],
 })
-export class ContrasenaPage  {
+export class ContrasenaPage implements OnInit {
 
-  db: SQLiteObject = null;
+  constructor() { }
 
-  public database: SQLiteObject;
-
-Usuario:string;
-
-  constructor(private activeroute: ActivatedRoute, private router: Router, private sqlite: SQLite,) {
-  }
-
-  forgot(){
-    console.log('forgot password:' + this.Usuario)
+  ngOnInit() {
   }
 
 }
-
